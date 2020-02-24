@@ -6,10 +6,10 @@
       "name": "mobirise4",
       "title": "Mobirise 4",
       "styling": {
-        "primaryColor": "#149dcc",
-        "secondaryColor": "#ff3366",
-        "successColor": "#F7ED4A",
-        "infoColor": "#82786E",
+        "primaryColor": "#f49e07",
+        "secondaryColor": "#f49e07",
+        "successColor": "#3a7f96",
+        "infoColor": "#465052",
         "warningColor": "#879A9F",
         "dangerColor": "#B1A374",
         "mainFont": "Rubik",
@@ -23,7 +23,7 @@
         "display7Size": "1.2",
         "display4Font": "Oswald",
         "display4Size": "1",
-        "isRoundedButtons": false,
+        "isRoundedButtons": true,
         "isAnimatedOnScroll": true,
         "isScrollToTopButton": true
       },
@@ -42,7 +42,7 @@
       }
     ],
     "versionFirst": "4.7.6",
-    "uniqCompNum": 44,
+    "uniqCompNum": 45,
     "versionPublish": "4.11.5",
     "cookiesAlert": {
       "customDialogSelector": false,
@@ -986,315 +986,41 @@
           "_params": {}
         },
         {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "background-color": "@bgColor",
-            "overflow": "hidden",
-            ".mbr-slider .carousel-control": {
-              "background": "#1b1b1b"
-            },
-            ".mbr-slider .carousel-control-prev": {
-              "left": "0",
-              "margin-left": "2.5rem"
-            },
-            ".mbr-slider .carousel-control-next": {
-              "right": "0",
-              "margin-right": "2.5rem"
-            },
-            ".mbr-slider .modal-body .close": {
-              "background": "#1b1b1b"
-            },
-            ".mbr-gallery-item > div::before": {
-              "content": "''",
-              "position": "absolute",
-              "left": "0",
-              "top": "0",
-              "width": "100%",
-              "height": "100%",
-              "background": "@overlayColor",
-              "opacity": "0",
-              "-webkit-transition": "0.2s opacity ease-in-out",
-              "transition": "0.2s opacity ease-in-out",
-              "& when (@gradOverlay)": {
-                "background": "linear-gradient(to left, @overlayColor, @overlayColor2) !important"
-              }
-            },
-            ".mbr-gallery-item > div:hover": {
-              ".mbr-gallery-title::before": {
-                "background": "transparent !important"
-              },
-              "&:before": {
-                "opacity": "@overlayOpacity !important"
-              }
-            },
-            ".mbr-gallery-title": {
-              "font-size": ".9em",
-              "position": "absolute",
-              "display": "block",
-              "width": "100%",
-              "bottom": "0",
-              "padding": "1rem",
-              "color": "#fff",
-              "z-index": "2",
-              "&:before": {
-                "content": "\" \"",
-                "width": "100%",
-                "height": "100%",
-                "top": "0",
-                "left": "0",
-                "z-index": "-1",
-                "position": "absolute",
-                "background": "@overlayColor !important",
-                "opacity": "@overlayOpacity",
-                "-webkit-transition": "0.2s background ease-in-out",
-                "transition": "0.2s background ease-in-out",
-                "& when (@gradOverlay)": {
-                  "background": "linear-gradient(to left, @overlayColor, @overlayColor2) !important"
-                }
-              }
-            }
-          },
-          "_name": "gallery3",
-          "_customHTML": "<section class=\"mbr-gallery mbr-slider-carousel\" group=\"Sliders & Gallery\" plugins=\"Masonry,BootstrapCarouselSwipe,Gallery,VimeoPlayer,SliderVideo\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full-Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" title=\"Oben\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"0\" inline>\n        <input type=\"range\" title=\"Unten\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\" inline>\n        <input type=\"color\" title=\"Overlay-Farbe\" name=\"overlayColor\" value=\"#3a7f96\">\n        <input type=\"checkbox\" title=\"Farbverlauf-Overlay\" name=\"gradOverlay\">\n        <input type=\"color\" title=\"Overlay-Farbe 2\" name=\"overlayColor2\" value=\"#45505b\" condition=\"gradOverlay\">\n        <input type=\"range\" title=\"Overlay-Transparenz\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" inline>\n        <input type=\"color\" title=\"Hintergrundfarbe\" name=\"bgColor\" value=\"#232323\">\n\n        <input type=\"gallery\" title=\"Gallerie\" name=\"gallery\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div mbr-gallery=\"gallery\"></div>\n    </div>\n\n</section>",
-          "_cid": "rJBr6sev3b",
-          "_anchor": "gallery3-x",
-          "_protectedParams": [
-            "text_all",
-            "gallery__filtersTextStyle",
-            "gallery__filtersBtnStyle",
-            "gallery"
-          ],
-          "_global": false,
-          "_once": false,
           "_params": {
-            "text_all": "All",
-            "gallery__filtersTextStyle": "display-7",
-            "gallery__filtersBtnStyle": "btn-primary-outline",
-            "gallery": [
-              {
-                "tags": "Animiert",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/3da92991-b816-4fdc-8f1b-789fcfacf43e-1.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/3da92991-b816-4fdc-8f1b-789fcfacf43e-1-800x533.jpg",
-                "alt": "",
-                "title": "",
-                "customStyle1": "display-7",
-                "caption": "Bildunterschrift",
-                "active": true
-              },
-              {
-                "tags": "Animiert",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/5ec89dae-ea71-4f43-9e1f-2ac8db6f28ae-2.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/5ec89dae-ea71-4f43-9e1f-2ac8db6f28ae-2-800x800.jpg",
-                "alt": "",
-                "title": "",
-                "customStyle1": "display-7",
-                "caption": "Bildunterschrift",
-                "active": false
-              },
-              {
-                "tags": "Animiert",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/9d5cf66d-bd8f-43f3-a3aa-ebc4984a7197-2.png",
-                "thumb": "@PROJECT_PATH@/assets/images/9d5cf66d-bd8f-43f3-a3aa-ebc4984a7197-2-800x800.png",
-                "alt": "",
-                "title": "",
-                "customStyle1": "display-7",
-                "caption": "Bildunterschrift",
-                "active": false
-              },
-              {
-                "tags": "Animiert",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/73b4782d-bcdb-4e5c-8e73-f47e22360f86-2.png",
-                "thumb": "@PROJECT_PATH@/assets/images/73b4782d-bcdb-4e5c-8e73-f47e22360f86-2-800x800.png",
-                "alt": "",
-                "title": "",
-                "customStyle1": "display-7",
-                "caption": "Bildunterschrift",
-                "active": false
-              },
-              {
-                "tags": "Animiert",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/975c1352-8309-4556-8af7-16f6084a32fb-2.gif",
-                "thumb": "@PROJECT_PATH@/assets/images/975c1352-8309-4556-8af7-16f6084a32fb-2.gif",
-                "alt": "",
-                "title": "",
-                "customStyle1": "display-7",
-                "caption": "Bildunterschrift",
-                "active": false
-              },
-              {
-                "tags": "Animiert",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/1827ae88-fa3f-4f80-9a08-eb32e9a966d7-4.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/1827ae88-fa3f-4f80-9a08-eb32e9a966d7-4-800x533.jpg",
-                "alt": "",
-                "title": "",
-                "customStyle1": "display-7",
-                "caption": "Bildunterschrift",
-                "active": false
-              },
-              {
-                "tags": "Animiert",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/ada53142-b94e-4bdc-bc2c-a7a84bf2375d-2.png",
-                "thumb": "@PROJECT_PATH@/assets/images/ada53142-b94e-4bdc-bc2c-a7a84bf2375d-2-800x937.png",
-                "alt": "",
-                "title": "",
-                "customStyle1": "display-7",
-                "caption": "Bildunterschrift",
-                "active": false
-              },
-              {
-                "tags": "Animiert",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/aed3e32b-9ab0-4794-8adf-89fc95cd6f56-1.gif",
-                "thumb": "@PROJECT_PATH@/assets/images/aed3e32b-9ab0-4794-8adf-89fc95cd6f56-1.gif",
-                "alt": "",
-                "title": "",
-                "customStyle1": "display-7",
-                "caption": "Bildunterschrift",
-                "active": false
-              },
-              {
-                "tags": "Animiert",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/d07f861a-b6a6-46f4-8325-edb2d64c1720-2.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/d07f861a-b6a6-46f4-8325-edb2d64c1720-2-800x425.jpg",
-                "alt": "",
-                "title": "",
-                "customStyle1": "display-7",
-                "caption": "Bildunterschrift",
-                "active": false
-              },
-              {
-                "tags": "Animiert",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/f315038f-8f74-4ee3-81a1-d76f5f287fac-2.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/f315038f-8f74-4ee3-81a1-d76f5f287fac-2-800x600.jpg",
-                "alt": "",
-                "title": "",
-                "customStyle1": "display-7",
-                "caption": "Bildunterschrift",
-                "active": false
-              },
-              {
-                "tags": "Animiert",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/img-362.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/img-362-800x601.jpg",
-                "alt": "",
-                "title": "",
-                "customStyle1": "display-7",
-                "caption": "Bildunterschrift",
-                "active": false
-              },
-              {
-                "tags": "Animiert",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/img-389.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/img-389-800x559.jpg",
-                "alt": "",
-                "title": "",
-                "customStyle1": "display-7",
-                "caption": "Bildunterschrift",
-                "active": false
-              },
-              {
-                "tags": "Animiert",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/img-3966.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/img-3966-682x1027.jpg",
-                "alt": "",
-                "title": "",
-                "customStyle1": "display-7",
-                "caption": "Bildunterschrift",
-                "active": false
-              },
-              {
-                "tags": "Animiert",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/img-4853.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/img-4853-800x600.jpg",
-                "alt": "",
-                "title": "",
-                "customStyle1": "display-7",
-                "caption": "Bildunterschrift",
-                "active": false
-              },
-              {
-                "tags": "Animiert",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/img-4886.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/img-4886-800x1067.jpg",
-                "alt": "",
-                "title": "",
-                "customStyle1": "display-7",
-                "caption": "Bildunterschrift",
-                "active": false
-              },
-              {
-                "tags": "Animiert",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/img-5087.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/img-5087-800x596.jpg",
-                "alt": "",
-                "title": "",
-                "customStyle1": "display-7",
-                "caption": "Bildunterschrift",
-                "active": false
-              },
-              {
-                "tags": "Animiert",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/img-5446.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/img-5446-800x601.jpg",
-                "alt": "",
-                "title": "",
-                "customStyle1": "display-7",
-                "caption": "Bildunterschrift",
-                "active": false
-              }
-            ]
+            "token": "2458823.727bfe1.0a6feae20b11426cbb20c73c7a5ddc56",
+            "showTitle": true,
+            "layoutGridRadio": true,
+            "imagesPerRowGrid": "8",
+            "rows": "3",
+            "showMoreButton": true,
+            "layoutSliderRadio": false,
+            "imagesPerRowSlider": "7",
+            "spacing": 5,
+            "fullWidth": false,
+            "paddingTop": "1",
+            "paddingBottom": 1,
+            "bgColorRadio": true,
+            "bgColor": "#232323",
+            "bgImageRadio": false,
+            "bgImage": "@ADDONS_PATH@/instagram-feed/instagram-feed-block/assets/instagram-background.jpg",
+            "overlay": false,
+            "overlayColor": "#efefef",
+            "overlayOpacity": 0.6
+          },
+          "title": "Instagram Feed",
+          "buttons": "<a data-app-btn=\"true\" class=\"btn btn-md btn-primary display-4\" href=\"#\" data-max-id=\"2196657070719981852_2458823\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,-mbrLink\">Show more</a>",
+          "display2": "display-2",
+          "display4": "display-4",
+          "alias": "instagram-feed",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "instagram-feed-block",
+          "_anchor": "instagram-feed-block-18",
+          "_styles": {
+            ".inst__title": {
+              "color": "#ffffff"
+            }
           }
         },
         {
