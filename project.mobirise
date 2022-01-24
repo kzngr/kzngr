@@ -53,20 +53,37 @@
     "imageResize": true,
     "chatbutton": {},
     "favicon": false,
-    "mbrsiteDomain": "neqpspukwy",
+    "mbrsiteDomain": "kzngrgtr",
     "cssOptimize": false,
     "lazyLoad": false,
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
     "sitemapSwitcherAuto": false,
     "siteUrl": false,
-    "cookiesAlert": false,
-    "gdpr": false,
-    "pwa-switcher": false,
+    "cookiesAlert": {
+      "customDialogSelector": false,
+      "colorText": "#424a4d",
+      "colorBg": "#eaeff1",
+      "colorButton": "",
+      "colorLink": "#424a4d",
+      "underlineLink": true,
+      "opacity": "99",
+      "opacityOverlay": "80",
+      "text": "We use cookies to give you the best experience. Read our <a href='privacy.html'>cookie policy</a>.",
+      "textButton": "Agree"
+    },
+    "pwa-switcher": true,
     "uniqCompNum": 41,
     "versionPublish": "5.5.8",
     "screenshot": "screenshot.png",
-    "publishChangesOnly": false
+    "publishChangesOnly": false,
+    "PWA": {
+      "enabled": true,
+      "name": "kzngr.de",
+      "icon": "@PROJECT_PATH@/assets/images/kzngr-nl_1.gif",
+      "themeColor": "#282828"
+    },
+    "gdpr": false
   },
   "pages": {
     "index.html": {
