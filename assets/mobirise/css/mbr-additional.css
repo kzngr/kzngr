@@ -5580,69 +5580,50 @@ a {
     text-align: center;
   }
 }
-.cid-tgWTThr4R6 {
-  padding-top: 4rem;
-  padding-bottom: 1rem;
+.cid-tntlVfRFYq {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
   background-color: #282828;
 }
-.cid-tgWTThr4R6 .content_wrapper {
-  position: relative;
-  padding: 50px 0;
-  border-top: 1px solid #f8c842;
+.cid-tntlVfRFYq .container {
+  max-width: 1400px;
+}
+.cid-tntlVfRFYq .mbr-iconfont {
+  display: block;
+  font-size: 6rem;
+  color: #f8c842;
+  margin-bottom: 2rem;
   border-bottom: 1px solid #f8c842;
-  z-index: 1;
+  padding-bottom: 2rem;
 }
-.cid-tgWTThr4R6 .content_wrapper:hover .mbr-section-title a {
-  color: #f8c842 !important;
+.cid-tntlVfRFYq .row {
+  justify-content: center;
 }
-.cid-tgWTThr4R6 .mbr-section-title {
-  margin-bottom: 12px;
+.cid-tntlVfRFYq .card-text {
+  color: #818181;
 }
-.cid-tgWTThr4R6 .icon_wrapper .mbr-iconfont {
-  font-size: 140px;
-  width: 140px;
-  height: 140px;
+.cid-tntlVfRFYq .card-title {
+  margin-bottom: 0.5rem;
+}
+.cid-tntlVfRFYq .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-tntlVfRFYq .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
   position: absolute;
-  z-index: -1;
-  color: #fef2ed;
-  top: 2%;
-  right: 13%;
+  top: 0;
 }
-.cid-tgWTThr4R6 .mbr-section-btn .btn-secondary-outline {
-  padding: 3px 0;
-  border: none !important;
-  background-color: transparent !important;
+.cid-tntlVfRFYq .mbr-section-title {
+  color: #f8c842;
 }
-.cid-tgWTThr4R6 .mbr-section-btn .btn-secondary-outline:hover,
-.cid-tgWTThr4R6 .mbr-section-btn .btn-secondary-outline .active,
-.cid-tgWTThr4R6 .mbr-section-btn .btn-secondary-outline:focus {
-  color: #6f6f6f !important;
+.cid-tntlVfRFYq .card-title,
+.cid-tntlVfRFYq .iconfont-wrapper {
+  color: #f8c842;
 }
-.cid-tgWTThr4R6 .card_post {
-  display: inline-flex;
-  align-items: center;
-  margin-top: 30px;
-}
-.cid-tgWTThr4R6 .image_post {
-  display: inline-block;
-}
-.cid-tgWTThr4R6 .image_post img {
-  object-fit: cover;
-  height: 50px;
-  width: 50px;
-  min-width: 50px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.07);
-  border-radius: 50%;
-}
-.cid-tgWTThr4R6 .author_post {
-  display: inline-block;
-  margin-left: 15px;
-}
-.cid-tgWTThr4R6 .mbr-text,
-.cid-tgWTThr4R6 .mbr-section-btn {
-  color: #f8f8f8;
-}
-.cid-tgWTThr4R6 .mbr-text,
-.cid-tgWTThr4R6 .mbr-section-btn P {
-  text-align: center;
+.cid-tntlVfRFYq .mbr-section-subtitle {
+  color: #f8c842;
 }
